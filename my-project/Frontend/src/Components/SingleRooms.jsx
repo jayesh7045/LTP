@@ -16,7 +16,7 @@ function RoomDetails() {
     const fetchRoomDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/rooms/getroombyid/${roomid}`
+          `https://ltp-3.onrender.com/api/rooms/getroombyid/${roomid}`
         );
         console.log(response.data);
         setRoomDetails(response.data);

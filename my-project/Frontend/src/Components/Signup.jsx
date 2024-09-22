@@ -20,7 +20,7 @@ function Signup({ hasAccount, createAccount, value}) {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/users/register",
+        "https://ltp-3.onrender.com/api/users/register",
         RegistrationValue,
         {
           headers: {

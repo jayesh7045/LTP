@@ -12,7 +12,7 @@ function ContactOwner() {
 
   const submitQueryData = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/users/querydata", {
+      const response = await fetch("https://ltp-3.onrender.com/api/users/querydata", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function ContactOwner() {
     console.log("Hello");
     try {
       const response = await fetch(
-        `http://localhost:8080/api/owner/ownerdetails/${id}`
+        `https://ltp-3.onrender.com/api/owner/ownerdetails/${id}`
       );
       const jsonData = await response.json();
       setOwnerDetails(jsonData.data);

@@ -18,7 +18,7 @@ function Login({hasAccount, createAccount}) {
     setError('');
   
     try {
-      const res = await axios.post('http://localhost:8080/api/users/login', loginValues, {
+      const res = await axios.post('https://ltp-3.onrender.com/api/users/login', loginValues, {
         headers: {
           "Content-Type": "application/json",
         },

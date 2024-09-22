@@ -32,7 +32,7 @@ function Rooms() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/rooms/getallrooms"
+          "https://ltp-3.onrender.com/api/rooms/getallrooms"
         );
         if (!response) {
           setLoading(true);
